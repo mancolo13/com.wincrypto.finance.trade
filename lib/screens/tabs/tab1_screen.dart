@@ -57,7 +57,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    '$B',
+                    r'$B',
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.white.withValues(alpha: 0.7),
