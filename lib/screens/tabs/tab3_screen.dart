@@ -24,7 +24,7 @@ class Tab3Screen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  const Text('Быстрый своп без комиссий', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                  const Text('Zero-fee Instant Swap', style: TextStyle(color: Colors.white70, fontSize: 12)),
                   const SizedBox(height: 14),
                   Container(
                     padding: const EdgeInsets.all(14),
@@ -32,7 +32,7 @@ class Tab3Screen extends StatelessWidget {
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('Вы отдаете: 2.50 ETH', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
+                        Text('You pay: 2.50 ETH', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
                         Text('\$8,775', style: TextStyle(color: Colors.white60, fontSize: 12)),
                       ],
                     ),
@@ -46,8 +46,8 @@ class Tab3Screen extends StatelessWidget {
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('Вы получаете: 8,760 USDT', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
-                        Text('Курс: 1 ETH = 3,504 USDT', style: TextStyle(color: AppTheme.secondaryColor, fontSize: 11)),
+                        Text('You receive: 8,760 USDT', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
+                        Text('Rate: 1 ETH = 3,504 USDT', style: TextStyle(color: AppTheme.secondaryColor, fontSize: 11)),
                       ],
                     ),
                   ),
@@ -55,7 +55,7 @@ class Tab3Screen extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(backgroundColor: AppTheme.primaryColor, foregroundColor: Colors.black, minimumSize: const Size.fromHeight(48)),
-                    child: const Text('Обменять токен'),
+                    child: const Text('Swap Tokens'),
                   ),
                 ],
               ),

@@ -7,9 +7,9 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final news = [
-      {'title': 'Институциональный приток в ETF превысил \$420M за сутки', 'time': '20 мин назад', 'cat': 'Рынки'},
-      {'title': 'Обновление сети Ethereum снизило комиссии второго уровня на 40%', 'time': '1 час назад', 'cat': 'Технологии'},
-      {'title': 'Хешрейт сети Биткоин достиг нового исторического максимума', 'time': '3 часа назад', 'cat': 'Майнинг'},
+      {'title': 'Institutional ETF Inflows Exceeded \$420M in 24h', 'time': '20 min ago', 'cat': 'Markets'},
+      {'title': 'Ethereum upgrade cuts Layer-2 fees by 40%', 'time': '1 hour ago', 'cat': 'Tech'},
+      {'title': 'Bitcoin network hashrate hits new all-time high', 'time': '3 hours ago', 'cat': 'Mining'},
     ];
 
     return Scaffold(
@@ -21,7 +21,7 @@ class Tab4Screen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Text('Крипто-лента новостей', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Crypto Newsfeed', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...news.map((n) => Container(
               margin: const EdgeInsets.only(bottom: 12),

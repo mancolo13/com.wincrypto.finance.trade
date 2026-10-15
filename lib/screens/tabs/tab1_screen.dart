@@ -36,7 +36,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text('BTC / USDT Perpetual', style: TextStyle(color: Colors.white70, fontSize: 14, fontWeight: FontWeight.bold)),
-                      Text('+4.18% 24ч', style: TextStyle(color: Colors.greenAccent, fontSize: 13, fontWeight: FontWeight.bold)),
+                      Text('+4.18% 24h', style: TextStyle(color: Colors.greenAccent, fontSize: 13, fontWeight: FontWeight.bold)),
                     ],
                   ),
                   const SizedBox(height: 8),
@@ -44,7 +44,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                   const SizedBox(height: 14),
                   Row(
                     children: [
-                      Text('Плечо: ${_leverage}x', style: const TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold)),
+                      Text('Leverage: ${_leverage}x', style: const TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold)),
                       Expanded(
                         child: Slider(
                           value: _leverage.toDouble(),
@@ -80,7 +80,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Биржевой стакан (Спред: \$0.50)', style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold)),
+            const Text('Order Book (Spread: \$0.50)', style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold)),
             const SizedBox(height: 10),
             Container(
               padding: const EdgeInsets.all(16),
@@ -90,8 +90,8 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Цена (USDT)', style: TextStyle(color: Colors.white54, fontSize: 12)),
-                      Text('Количество (BTC)', style: TextStyle(color: Colors.white54, fontSize: 12)),
+                      Text('Price (USDT)', style: TextStyle(color: Colors.white54, fontSize: 12)),
+                      Text('Amount (BTC)', style: TextStyle(color: Colors.white54, fontSize: 12)),
                     ],
                   ),
                   SizedBox(height: 8),
